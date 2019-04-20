@@ -7,8 +7,17 @@
 	</head>
 	<body>
 		<div class="container">
-			@component('components.meucomponente')
-				<strong>Erro: </strong> Mensagem de erro.
+			@component('components.meucomponente', ['titulo'=>'Erro Fatal','tipo'=>'danger'] )
+			{{-- @slot('titulo')
+			Erro Fatal!
+			@endslot
+			@slot('tipo')
+			danger
+			@endslot --}}
+			<strong>Erro: </strong> Mensagem de erro.
+			@endcomponent
+			@component('components.meucomponente', ['titulo'=>'Atenção','tipo'=>'warning'] )
+			<strong>Atenção: </strong> Mensagem de atenção.
 			@endcomponent
 		</div>
 		{{-- script --}}
