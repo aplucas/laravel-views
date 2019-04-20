@@ -37,9 +37,12 @@ route::get('/email/{email}', function ($email) {
 	} else {
 		return view('erro');
 	}
-
 });
 
 Route::get('/filha', function () {
 	return view('filha');
+});
+
+Route::get('/pagina', function () {
+	return view('pagina');
 });
