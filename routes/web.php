@@ -46,3 +46,7 @@ Route::get('/filha', function () {
 Route::get('/pagina', function () {
 	return view('pagina');
 });
+
+Route::get('/produtos', 'ProdutoControlador@listar');
+
+Route::get('/secao_produtos', 'ProdutoControlador@secaoprodutos');
