@@ -54,3 +54,7 @@ Route::get('/secao_produtos/{palavra}', 'ProdutoControlador@secaoprodutos');
 Route::get('/mostraropcoes', 'ProdutoControlador@mostrar_opcoes');
 
 Route::get('/opcoes/{opcao}', 'ProdutoControlador@opcoes');
+
+Route::get('/loop/for/{n}', 'ProdutoControlador@loopfor');
+
+Route::get('/loop/foreach', 'ProdutoControlador@loopforeach');

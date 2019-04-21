@@ -14,6 +14,13 @@
 				@else
 					<h1>Temos vários produtos</h1>
 				@endif
+
+				@foreach ($produtos as $p)
+					@alerta(['titulo'=>'Produto','tipo'=>'primary'] )
+						<strong>Nome: </strong> {{ $p }}.
+					@endalerta
+				@endforeach
+
 			@else
 				<h2>Variável produtos não foi passada como parâmetro.</h2>
 			@endif
