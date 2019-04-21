@@ -49,4 +49,8 @@ Route::get('/pagina', function () {
 
 Route::get('/produtos', 'ProdutoControlador@listar');
 
-Route::get('/secao_produtos', 'ProdutoControlador@secaoprodutos');
+Route::get('/secao_produtos/{palavra}', 'ProdutoControlador@secaoprodutos');
+
+Route::get('/mostraropcoes', 'ProdutoControlador@mostrar_opcoes');
+
+Route::get('/opcoes/{opcao}', 'ProdutoControlador@opcoes');
